@@ -55,5 +55,8 @@
   "bugs": {
     "url": "https://github.com/JaderCleber/consultar-cep-react/issues"
   },
-  "homepage": "https://github.com/JaderCleber/consultar-cep-react#readme"
+  "homepage": "https://github.com/JaderCleber/consultar-cep-react#readme",
+  "devDependencies": {
+    "@types/google-maps-react": "^2.0.1"
+  }
 }
