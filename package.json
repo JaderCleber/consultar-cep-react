@@ -59,6 +59,7 @@
   },
   "homepage": "https://github.com/JaderCleber/consultar-cep-react#readme",
   "devDependencies": {
+    "@types/enzyme": "^3.9.3",
     "@types/google-maps-react": "^2.0.1"
   }
 }
