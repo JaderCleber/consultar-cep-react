@@ -5,14 +5,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.0.2",
-    "@types/jest": "24.0.13",
-    "@types/node": "12.0.4",
-    "@types/react": "16.8.19",
-    "@types/react-dom": "16.8.4",
     "classnames": "^2.2.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "google-maps-react": "^2.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-geocode": "^0.1.2",
@@ -59,7 +54,11 @@
   },
   "homepage": "https://github.com/JaderCleber/consultar-cep-react#readme",
   "devDependencies": {
+    "@types/google-maps-react": "^2.0.1",
     "@types/enzyme": "^3.9.3",
-    "@types/google-maps-react": "^2.0.1"
+    "@types/jest": "24.0.13",
+    "@types/node": "12.0.4",
+    "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4"
   }
 }
