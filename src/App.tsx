@@ -72,6 +72,8 @@ class App extends React.PureComponent<PropTypes, IState> {
   handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     this.setState({ cep: e.target.value.replace(/\D/g, ''), notFound: '' });
 
+  handlePress = (cep: string) => (e: React.KeyboardEvent<HTMLDivElement>) =>
+    e.key === 'Enter' && cep.length === 8 && this.handleClick(cep)()
   handleClick = (cep: string) => () => {
     this.setState({ found: {}, location: null, notFound: '' }, async () => {
       try {
@@ -118,7 +120,7 @@ class App extends React.PureComponent<PropTypes, IState> {
               </Grid>
               <Grid item xs={2}>
                 <FormControl className={classes.margin}>
-                  <Input id='cep-search' value={cep} onChange={this.handleChange} />
+                  <Input id='cep-search' value={cep} onChange={this.handleChange} onKeyPress={this.handlePress(cep)} />
                 </FormControl>
               </Grid>
               <Grid item xs={2}>

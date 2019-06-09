@@ -15,11 +15,11 @@ interface PropTypes {
 class CardResult extends React.PureComponent<PropTypes, {}> {
 	componentDidMount() {
 		const { location } = this.props;
-		const map = new google.maps.Map(document.getElementById('map'), {
+		const map = new (google as any).maps.Map(document.getElementById('map'), {
 			zoom: 14,
 			center: location
 		});
-		new google.maps.Marker({
+		new (google as any).maps.Marker({
 			position: location,
 			map: map
 		});
